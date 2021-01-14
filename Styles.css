@@ -65,6 +65,7 @@ img{
 }
 .nav1{
     display: flex;
+    flex-direction: column;
     border: 1px solid rgb(51, 134, 96);
     padding: 10px;
     margin: 5px;
@@ -118,7 +119,9 @@ img{
 /* Section hebergements */
 .hebergements{
     display: flex;
+    justify-content: space-around;
     border: 1px solid black;
+    
 }
 .hebergements-marseille{
     display: flex;
@@ -127,48 +130,45 @@ img{
     width: 70%;
     height: 400px;
     padding: 2px;
-    margin: 5px;
+    margin: 20px;
 
 }
 .titre-hebergement{
     display: flex;
     border: 1px solid rgb(19, 20, 78);
-    padding: 2px;
-    margin: 5px;
+    padding-left: 20px;
 }
 .group-annonce{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     border: 1px solid rgb(19, 20, 78);
+    height: 100%;
+    width: 100%;
     padding: 2px;
-    margin: 5px;
+    margin: 2px;
 }
 .les-plus-populaires{
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(34, 110, 112);
-    width: 28%;
-    padding: 2px;
-    margin: 5px;
+    width: 30%;
+    padding: 5px;
+    margin: 20px;
 
 }
 .annonce-hm1{
     display: flex;
-    max-width: 300px;
-    max-height: 200px;
+    width: 30%;
+    height: 48%;
     border: 1px solid rgb(167, 49, 104);
-    padding: 2px;
-    margin: 20px;
+
 }
 .annonce-hm2{
     display: flex;
     border: 1px solid rgb(73, 12, 41);
-    max-width: 300px;
-    max-height: 200px;
-    padding: 2px;
-    margin: 20px;
-    
+    width: 100%;
+    height: 30%;
 }
 
 /* Section Activités */
@@ -189,39 +189,39 @@ img{
     display: flex;
     flex-direction: row;
     border: 1px solid black;
+    min-height: 350px;
     padding: 2px;
     margin: 5px;
 }
 .activites-module{
     display: flex;
-    justify-content: auto;
-    width: 95%;
-    height: 45%;
+    justify-content: space-around;
+    width: 50%;
     border: 1px solid black;
-    margin: 5px;
+    margin: 2px;
 }
 .annonce-act1{
     display: flex;
-    border: 1px solid rgb(73, 12, 41);
-    max-width: 35%;
-    max-height: 90%;
-    padding: 2px;
+    width: 50%;
+    border: 1px solid black;
     margin: 20px;
+    max-width: 200px;
 }
 .group-act2{
     display: flex;
     flex-direction: column;
-    justify-content: auto;
+    align-items: center;
+    width: 50%;
     border: 1px solid black;
-    margin: 5px;
+    margin: 2px;
 }
 .annonce-act2{
     display: flex;
     border: 1px solid rgb(50, 150, 163);
-    max-width: 150px;
-    max-height: 80px;
-    padding: 2px;
-    margin: 2px;
+    height: 50%;
+    padding: 1px;
+    margin: 20px;
+    max-width: 200px;
 }
 
 
