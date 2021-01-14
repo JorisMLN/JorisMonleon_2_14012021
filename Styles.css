@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #F2F2F2;
+}
+
+
+/* Le header */
+.reservia-header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    flex-direction: row;
+    max-height: 80px;
+}
+.reservia-logo{
+    display: flex;
+    border: 2px solid rgb(148, 53, 53);
+    padding: 10px;
+    margin: 5px;
+}
+.reservia-menu
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    width: 25%;
+    max-width: 300px;
+    border: 2px solid rgb(68, 146, 75);
+    padding: 18px;
+    margin: 5px;
+}
+
+
+/* La navigation */
+.navigation{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    
+}
+.nav1{
+    display: flex;
+    border: 1px solid rgb(51, 134, 96);
+    padding: 10px;
+    margin: 5px;
+
+}
+.nav2{
+    display: flex;
+    border: 1px solid rgb(54, 62, 139);
+    padding: 10px;
+    margin: 5px;
+
+}
+
+
+/* Section hebergements */
+.hebergements{
+    display: flex;
+    border: 1px solid black;
+}
+.heberg1{
+    display: flex;
+
+}
+.heberg2{
+    display: flex;
+
+}
+
+
+/* Section Activités */
+.activites{
+    border: 1px solid black;
+}
+
+
+/* Le Footer */
+.reservia-footer{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+
+}
+.propos{
+    border: 1px solid rgb(60, 150, 65);
+    padding: 10px;
+    margin: 5px;
+}
+.noshebergements{
+    border: 1px solid rgb(63, 133, 151);
+    padding: 10px;
+    margin: 5px;
+}
+.assistance{
+    border: 1px solid rgb(148, 42, 77);
+    padding: 10px;
+    margin: 5px;
+}
