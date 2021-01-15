@@ -1,3 +1,5 @@
+
+/* Body */
 body{
     display: flex;
     flex-direction: column;
@@ -5,7 +7,34 @@ body{
     background-color: #F2F2F2;
 }
 img{
-    max-width: 100%;
+    max-width: 99%;
+    border-radius: 15px 15px 0px 0px;
+}
+.img-populaires{
+    max-width: 33%;
+    border-radius: 20px 0px 0px 20px;
+}
+a{
+    color: #0065FC;
+}
+/* Icons */
+.module-icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border: 2px solid #DEEBFF;
+    border-radius: 20px 20px 20px 20px;
+    width: 37px;
+    height: 100%;
+    
+
+}
+.fas, .far{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    
 }
 
 /* Le header */
@@ -54,7 +83,6 @@ img{
 }
 
 
-
 /* La navigation */
 .navigation{
     display: flex;
@@ -84,29 +112,12 @@ img{
     padding: 2px;
     margin: 5px;
 }
-.filtre-eco{
+.filtre-option{
     display: flex;
-    border: 1px solid rgb(55, 145, 148);
-    padding: 2px;
+    border: 2px solid #DEEBFF;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
     margin: 5px;
-}
-.filtre-fam{
-    display: flex;
-    border: 1px solid rgb(54, 126, 139);
-    padding: 2px;
-    margin: 5px;  
-}
-.filtre-rom{
-    display: flex;
-    border: 1px solid rgb(52, 112, 136);
-    padding: 2px;
-    margin: 5px;  
-}
-.filtre-ani{
-    display: flex;
-    border: 1px solid rgb(56, 150, 150);
-    padding: 2px;
-    margin: 5px;   
 }
 
 
@@ -119,22 +130,21 @@ img{
 .hebergements-marseille{
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(19, 20, 78);
+    background-color: #DEEBFF;
+    border: 2px solid #DEEBFF;
+    border-radius: 20px 20px 20px 20px;
     width: 70%;
-    height: 400px;
     padding: 2px;
     margin: 20px;
 }
 .titre-hebergement{
     display: flex;
-    border: 1px solid rgb(19, 20, 78);
     padding-left: 20px;
 }
 .group-annonce{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    border: 1px solid rgb(19, 20, 78);
     height: 99%;
     width: 99%;
     padding: 1px;
@@ -144,7 +154,9 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 1px solid rgb(0, 0, 0);
+    background-color: #DEEBFF;
+    border: 2px solid #DEEBFF;
+    border-radius: 20px 20px 20px 20px;
     width: 30%;
     padding: 5px;
     margin: 20px;
@@ -152,21 +164,28 @@ img{
 .titre-plus-populaires{
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(34, 110, 112);
     margin: 1px;
 }
 .annonce-hm1{
     display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
     width: 30%;
     height: 48%;
-    border: 1px solid rgb(56, 129, 163);
+    border: 2px solid rgb(255, 255, 255);
 }
 .annonce-hm2{
     display: flex;
-    border: 1px solid rgb(42, 148, 151);
+    flex-direction: row;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    border: 2px solid rgb(255, 255, 255);
     width: 100%;
     height: 25%;
 }
+
+
 
 /* Section Activités */
 .activites{
@@ -196,6 +215,7 @@ img{
 }
 .annonce-act1{
     display: flex;
+    border-radius: 15px 15px 15px 15px;
     width: 50%;
     border: 1px solid rgb(71, 139, 151);
     margin: 10px;
@@ -211,6 +231,7 @@ img{
 .annonce-act2{
     display: flex;
     border: 1px solid rgb(50, 150, 163);
+    border-radius: 15px 15px 15px 15px;
     height: 50%;
     width: 98%;
     padding: 1px;
@@ -230,4 +251,3 @@ img{
     flex-direction: column;
     border: 1px solid rgb(60, 150, 65);
 }
-
