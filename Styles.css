@@ -1,4 +1,13 @@
 
+
+/* Commentary
+
+Color 
+Blue -> #0065FC
+light blue -> #DEEBFF
+
+*/
+
 /* Body */
 body{
     display: flex;
@@ -6,13 +15,18 @@ body{
 
     background-color: #F2F2F2;
 }
-img{
-    max-width: 99%;
-    border-radius: 15px 15px 0px 0px;
+.image-hm1{
+    max-height: 55%;
+    border-radius: 15px 20px 0px 0px;
 }
-.img-populaires{
+.image-hm2{
     max-width: 33%;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 18px 0px 0px 18px;
+}
+.image-act1{
+    max-height: 90%;
+    max-width: 100%;
+    border-radius: 15px 20px 0px 0px;
 }
 a{
     color: #0065FC;
@@ -125,72 +139,95 @@ a{
 .hebergements{
     display: flex;
     justify-content: space-around;
-    border: 1px solid black;  
+    align-items: center;
+    border: 1px solid black;
+    
 }
 .hebergements-marseille{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;
     background-color: #DEEBFF;
     border: 2px solid #DEEBFF;
     border-radius: 20px 20px 20px 20px;
-    width: 70%;
+    width: 65%;
+    
     padding: 2px;
-    margin: 20px;
+    margin: 35px;
+    border: 1px solid rgb(0, 0, 0);
 }
 .titre-hebergement{
     display: flex;
-    padding-left: 20px;
+    padding-left: 5%;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
 }
 .group-annonce{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    height: 99%;
-    width: 99%;
-    padding: 1px;
-    margin: 1px;
+    align-items: center;
+    height: 480px;
+    width: 100%;
+    border: 1px solid black;
 }
 .les-plus-populaires{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     background-color: #DEEBFF;
     border: 2px solid #DEEBFF;
     border-radius: 20px 20px 20px 20px;
-    width: 30%;
+    width: 28%;
     padding: 5px;
-    margin: 20px;
+    margin-top: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    border: 1px solid rgb(0, 0, 0);
+    height: 550px
 }
 .titre-plus-populaires{
     display: flex;
     flex-direction: column;
     margin: 1px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 80%;
 }
 .annonce-hm1{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 15px 15px 15px 15px;
-    width: 30%;
-    height: 48%;
+    border-radius: 18px 18px 18px 18px;
     border: 2px solid rgb(255, 255, 255);
+    width: 25%;
+    height: 40%;
+    
 }
 .annonce-hm2{
     display: flex;
     flex-direction: row;
     background-color: white;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 18px 18px 18px 18px;
     border: 2px solid rgb(255, 255, 255);
-    width: 100%;
-    height: 25%;
+    width: 80%;
+    height: 20%;
+    
 }
-
+.afficher{
+    border: 1px solid black;
+    padding-left: 5%;
+    width: 100%;
+}
 
 
 /* Section Activités */
 .activites{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;
     border: 1px solid black;
     padding: 1px;   
 }
@@ -198,11 +235,16 @@ a{
     display: flex;
     border: 1px solid black;
     margin: 1px;
+    width: 98%;
 }
 .group-activite{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
+    justify-content: space-around;
+    align-items: center;
     border: 1px solid black;
+    width: 98%;
+    height: 380px;
     min-height: 350px;
     margin: 2px;
 }
@@ -210,11 +252,13 @@ a{
     display: flex;
     justify-content: space-around;
     width: 50%;
+    height: 98%;
     border: 1px solid black;
     margin: 2px;
 }
 .annonce-act1{
     display: flex;
+    flex-direction: column;
     border-radius: 15px 15px 15px 15px;
     width: 50%;
     border: 1px solid rgb(71, 139, 151);
