@@ -23,7 +23,12 @@ body{
     background-color: #ffffff;
     font-family: 'raleway', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+h1{
+    font-size: 1.2em;
+}
+p{
+    font-size: 0.8em;
+}
 /* Icons */
 .module-icon{
     display: flex;
@@ -63,7 +68,6 @@ body{
 }
 .reservia-logo{
     display: flex;
-    border: 2px solid rgb(0, 0, 0);
     padding: 10px;
     margin: 5px;
 }
@@ -75,12 +79,10 @@ body{
     width: 25%;
     max-width: 400px;
     border: 2px solid rgb(3, 3, 3);
-    margin: 5px;
 }
 .menu-hebergement{
     display: flex;
     justify-content: space-around;
-    border: 2px solid rgb(64, 145, 160);
     color: #0065FC;
     padding: 5px;
     margin: 5px;
@@ -88,7 +90,6 @@ body{
 .menu-activites{
     display: flex;
     justify-content: space-around;
-    border: 2px solid rgb(65, 139, 145);
     color: black;
     padding: 5px;
     margin: 5px;
@@ -96,7 +97,6 @@ body{
 .menu-inscription{
     display: flex;
     justify-content: space-around;
-    border: 2px solid rgb(75, 167, 154);
     color: #0065FC;
     padding: 5px;
     margin: 5px;
@@ -168,9 +168,7 @@ body{
     display: flex;
     flex-direction: row;    
     justify-content: space-around;
-
-    border: 1px solid rgb(0, 0, 0);
-    max-width: 1000px;
+    max-width: 800px;
     padding: 2px;
     margin: 5px;
 }
@@ -191,7 +189,6 @@ body{
     justify-content: space-around;
     max-width: 500px;
     margin: 5px;
-    border: 1px solid rgb(0, 0, 0);
 }
 
 
@@ -220,7 +217,6 @@ body{
 .titre-hebergement{
     display: flex;
     padding-left: 5%;
-    border: 1px solid rgb(0, 0, 0);
     width: 100%;
 }
 .group-annonce{
@@ -297,9 +293,9 @@ body{
 
 }
 .afficher{
-    border: 1px solid black;
     padding-left: 5%;
     width: 100%;
+    font-size: 1.4em;
 }
 
 
@@ -336,13 +332,12 @@ body{
     justify-content: space-around;
     width: 50%;
     height: 98%;
-    border: 1px solid black;
     margin: 2px;
 }
 .annonce-act1{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     margin: 10px;
     background-color: white;
     border-radius: 18px 18px 18px 18px;
@@ -357,7 +352,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 45%;
     margin: 10px;
 }
 .annonce-act2{
@@ -381,11 +376,23 @@ body{
 .reservia-footer{
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     justify-content: space-around;
+    background-color: #DEEBFF;
+    height: 150px;
+    margin-top: 20px;
+    padding-top: 15px;
 }
 .module-footer{
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(60, 150, 65);
+    width:28%;
+}
+.footer-titre{
+    display: flex;
+    align-items: center;
+    height: 20%;
+}
+.footer-text{
+    display: flex;
+    flex-direction: column; 
 }
