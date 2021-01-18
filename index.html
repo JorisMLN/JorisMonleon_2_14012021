@@ -19,55 +19,60 @@
             </div>
 
             <div class="reservia-menu">
-                <div class="menu-hebergement"><a href="">Hébergement</a></div>
-                <div class="menu-activites"><a href="">Activités</a></div>
-                <div class="menu-inscription"><a href="">S'inscrire</a></div>
+                <div class="menu-hebergement"><a href="#ancre-hebergement">Hébergements</a></div>
+                <div class="menu-activites"><a href="#ancre-activites">Activités</a></div>
+                <div class="menu-inscription"><strong>S'inscrire</strong></div>
             </div>
 
         </div>
     </header>
 
     <!-- Section Navigation -->
-    <section class="navigation">
+    <nav class="navigation">
         <div class="nav1">
-            <p>Trouver votre hegergement pour des vacances de rêve <br />
-                En plein centre ville ou en pleine nature</p>
-            <div class="recherche-button">Rechercher</div>
+            <div>
+                <p><strong>Trouver votre hegergement pour des vacances de rêve</strong> <br />
+                    En plein centre ville ou en pleine nature</p>
+            </div>
+            <div class="recherche-module">
+                <div class="icon-map"><i id="iconmap" class="fas fa-map-marker-alt"></i></div>
+                <div class="champ-recherche"><input class="saisie" type="text" placeholder="Marseille, France" /></div>
+                <div class="recherche-button">Rechercher</div>
+            </div>
         </div>
         <div class="nav2">
             <div class="filtres">
-                <p>Filtres</p>
+                <p><strong>Filtres</strong></p>
                 <div class="filtre-option">
-                    <div class="module-icon">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>Economique
+                    <div class="module-icon"><i class="fas fa-money-bill-wave"></i></div>
+                    <div class="filtre-text"><strong> Economique </strong></div>
                 </div>
                 <div class="filtre-option">
-                    <div class="module-icon">
-                        <i class="fas fa-child"></i>
-                    </div>Familial
+                    <div class="module-icon"><i class="fas fa-child"></i></div>
+                    <div class="filtre-text"><strong> Familial </strong></div>
                 </div>
                 <div class="filtre-option">
-                    <div class="module-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>Romantique
+                    <div class="module-icon"><i class="fas fa-heart"></i></div>
+                    <div class="filtre-text"><strong> Romantique </strong></div>
                 </div>
                 <div class="filtre-option">
-                    <div class="module-icon">
-                        <i class="fas fa-dog"></i>
-                    </div>Animaux autorisés
+                    <div class="module-icon"><i class="fas fa-dog"></i></div>
+                    <div class="filtre-text"><strong> Animaux autorisés </strong></div>
                 </div>
             </div>
             <div class="filtre-info">
-                <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette villes</p>
+                <div><i class="fas fa-info"></i></div>
+                <div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </div>
         </div>
-    </section>
+    </nav>
 
     <!-- Section Hebergements -->
     <section class="hebergements">
-        <div class="hebergements-marseille">
-            <div class="titre-hebergement">
+        <article class="hebergements-marseille">
+            <div id="ancre-hebergement" class="titre-hebergement">
                 <p>Hebergements à Marseille</p>
             </div>
             <div class="group-annonce">
@@ -121,8 +126,8 @@
             <div class="afficher">
                 <p>Afficher plus</p>
             </div>
-        </div>
-        <div class="les-plus-populaires">
+        </article>
+        <aside class="les-plus-populaires">
             <div class="titre-plus-populaires">
                 <p>Les plus Populaires <i class="fas fa-chart-line"></i></p>
             </div>
@@ -150,19 +155,22 @@
                     <i class="far fa-star"></i>
                 </div>
             </div>
-        </div>
+        </aside>
     </section>
 
     <!-- Section activites -->
     <section class="activites">
-        <div class="titre-activite">
+        <div id="ancre-activites" class="titre-activite">
             <p>Activités à Marseille</p>
         </div>
         <div class="group-activite">
             <div class="activites-module">
                 <div class="annonce-act1">
-                    <img class="image-act1" src="image/activites/SM/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="VieuxPort">
-                    <div><p>Le vieux Port</p></div>
+                    <img class="image-act1" src="image/activites/SM/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        alt="VieuxPort">
+                    <div>
+                        <p>Le vieux Port</p>
+                    </div>
                 </div>
                 <div class="group-act2">
                     <div class="annonce-act2"><img src="image/marcus-l-WQJvWU_HZFo-unsplash.jpg" alt="Fort de Pomégues">
@@ -173,8 +181,11 @@
             </div>
             <div class="activites-module">
                 <div class="annonce-act1">
-                    <img class="image-act1" src="image/activites/SM/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="VieuxPort">
-                    <div><p>Parc National des Calanques</p></div>
+                    <img class="image-act1" src="image/activites/SM/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        alt="VieuxPort">
+                    <div>
+                        <p>Parc National des Calanques</p>
+                    </div>
                 </div>
                 <div class="group-act2">
                     <div class="annonce-act2"><img src="image/marcus-l-WQJvWU_HZFo-unsplash.jpg"
