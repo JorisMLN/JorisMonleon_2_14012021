@@ -23,19 +23,6 @@ body{
     background-color: #ffffff;
     font-family: 'raleway', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.image-hm1{
-    max-height: 55%;
-    border-radius: 15px 20px 0px 0px;
-}
-.image-hm2{
-    max-width: 33%;
-    border-radius: 18px 0px 0px 18px;
-}
-.image-act1{
-    max-height: 90%;
-    max-width: 100%;
-    border-radius: 15px 20px 0px 0px;
-}
 
 /* Icons */
 .module-icon{
@@ -48,8 +35,6 @@ body{
     border-radius: 20px 20px 20px 20px;
     width: 37px;
     height: 100%;
-    
-
 }
 .fas, .far{
     color: #0065FC;
@@ -59,6 +44,12 @@ body{
 #iconmap{
     color: #000000;
 }
+.icon-hm{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
 
 
 /* Le header */
@@ -259,30 +250,51 @@ body{
 }
 .titre-plus-populaires{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
     margin: 1px;
     border: 1px solid rgb(0, 0, 0);
     width: 80%;
+}
+#icon-populaire{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #000000;
+    height: 100%;
 }
 .annonce-hm1{
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 18px 18px 18px 18px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
     width: 25%;
     height: 40%;
     
+}
+.image-hm1{
+    max-height: 55%;
+    border-radius: 15px 20px 0px 0px;
 }
 .annonce-hm2{
     display: flex;
     flex-direction: row;
     background-color: white;
     border-radius: 18px 18px 18px 18px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
     width: 80%;
-    height: 20%;
-    
+    height: 20%;   
+}
+.image-hm2{
+    max-width: 33%;
+    border-radius: 18px 0px 0px 18px;
+}
+.text-hm2{
+    display: flex;
+    flex-direction: column;
+
 }
 .afficher{
     border: 1px solid black;
@@ -298,13 +310,15 @@ body{
     justify-content: space-around;
     align-items: center;
     border: 1px solid black;
-    padding: 1px;   
+    padding: 1px;
+    height: 600px; 
 }
 .titre-activite{
     display: flex;
     border: 1px solid black;
     margin: 1px;
-    width: 98%;
+    width: 95%;
+    height: 10%;
 }
 .group-activite{
     display: flex;
@@ -312,8 +326,8 @@ body{
     justify-content: space-around;
     align-items: center;
     border: 1px solid black;
-    width: 98%;
-    height: 380px;
+    width: 95%;
+    height: 90%;
     min-height: 350px;
     margin: 2px;
 }
@@ -328,27 +342,38 @@ body{
 .annonce-act1{
     display: flex;
     flex-direction: column;
-    border-radius: 15px 15px 15px 15px;
     width: 50%;
-    border: 1px solid rgb(71, 139, 151);
     margin: 10px;
+    background-color: white;
+    border-radius: 18px 18px 18px 18px;
+    border: 5px solid rgb(255, 255, 255);
+}
+.image-act1{
+    height: 90%;
+    width: 100%;
+    border-radius: 15px 20px 0px 0px;
 }
 .group-act2{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-    border: 1px solid black;
     margin: 10px;
 }
 .annonce-act2{
     display: flex;
-    border: 1px solid rgb(50, 150, 163);
-    border-radius: 15px 15px 15px 15px;
-    height: 50%;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 18px 18px 18px 18px;
+    border: 5px solid rgb(255, 255, 255);
+    height: 48%;
     width: 98%;
-    padding: 1px;
-    margin: 2px;  
+    
+}
+.image-act2{
+    height: 80%;
+    width: 100%;
+    border-radius: 15px 20px 0px 0px;
 }
 
 
