@@ -25,6 +25,7 @@ body{
 }
 h2{
     font-size: 1.2em;
+    font-weight: bold;
 }
 p{
     font-size: 0.8em;
@@ -48,6 +49,17 @@ p{
 }
 #iconmap{
     color: #000000;
+}
+#iconsearch{
+    color: #DEEBFF;
+    background-color: #0065FC;
+}
+#iconinfo{
+    border: 1px solid #DEEBFF;
+    border-radius: 15px 15px 15px 15px ;
+    margin: 15px;
+    padding: 5px;
+
 }
 .icon-hm{
     display: flex;
@@ -116,13 +128,12 @@ p{
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    padding-left: 15px;
 }
 .nav1{
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(0, 0, 0);
-    padding: 5px;
+    padding: 15px;
     margin: 5px;
 }
 .recherche-module{
@@ -132,6 +143,7 @@ p{
     align-items: center;
     height: 37px;
     width: 325px;
+    border: 1px solid rgb(0, 0, 0);
 }
 .icon-map{
     display: flex;
@@ -153,6 +165,7 @@ p{
     border: #DEEBFF;
     height: 100%;
     width: 100%;
+    font-weight: bold;
 }
 .recherche-button{
     display: flex;
@@ -165,11 +178,13 @@ p{
     background-color: #0065FC;
     color: white;
 }
+.icon-rechercher{
+    display: none;
+}
 .nav2{
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(0, 0, 0);
-    padding: 5px;
     margin: 5px;
 }
 .filtres{
@@ -179,6 +194,14 @@ p{
     max-width: 800px;
     padding: 2px;
     margin: 5px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.filtre-responsiv{
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-around;
+    max-width: 800px;
+    border: 1px solid rgb(0, 0, 0);
 }
 .filtre-option{
     display: flex;
@@ -204,6 +227,7 @@ p{
 .hebergements{
     display: flex;
     justify-content: space-around;
+    width: 100%;
     align-items: center;
     border: 1px solid black;
     
@@ -217,7 +241,6 @@ p{
     border: 2px solid #DEEBFF;
     border-radius: 20px 20px 20px 20px;
     width: 65%;
-    
     padding: 2px;
     margin: 35px;
     border: 1px solid rgb(0, 0, 0);
@@ -246,9 +269,7 @@ p{
     border-radius: 20px 20px 20px 20px;
     width: 28%;
     padding: 5px;
-    margin-top: 35px;
-    margin-right: 35px;
-    margin-bottom: 35px;
+    margin: 35px 35px 35px 0;
     border: 1px solid rgb(0, 0, 0);
     height: 550px
 }
@@ -405,13 +426,25 @@ p{
     flex-direction: column; 
 }
 
+
+
+
+
+
+
+
+
+
 /* Responsive Mobile 
 Mobile = 480px
+
 */
 @media screen and (max-width: 480px){
+    /* Header */
     .reservia-header{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         align-items: flex-start;
     }
     .reservia-logo{
@@ -421,19 +454,172 @@ Mobile = 480px
     .reservia-menu{
         display: flex;
         align-self: flex-end;
-        width: 95%;
+        width: 100%;
         order: 3;
     }
     .inscription-module{
         display: flex;
-        align-self: initial;
-        height: 60px;
+        align-items: center;
+        height: 65px;
         margin: 5px;
-        width: 40%;
+        width: 20%;
         order: 2;
     }
-
+    /* Navigation */
+    .filtres{
+        flex-direction: column;
+    }
+    .filtre-responsiv{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-height: 160px;
+    }
+    .icon-map{
+        width: 16%;
+    }
+    .recherche-module{
+        width: 100%;
+    }
+    .champ-recherche{
+        width: 88%;
+    }
+    .recherche-button{
+        display: none;
+    }
+    .icon-rechercher{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 15%;
+        border-radius: 12px 12px 12px 12px;
+        border: 2px solid #0065FC;
+        background-color: #0065FC;
+        color: white;
+    }
+    /* Hebergements */
+    .hebergements{
+        flex-direction: column-reverse;
+    }
+    .les-plus-populaires{
+        width: 100%;
+        margin: 0px;
+        border-radius: 0;
+    }
+    .titre-plus-populaires{
+        width: 95%;
+    }
+    .annonce-hm2{
+        width: 90%;
+        height: 23%;
+    }
+    .image-hm2{
+        width: 160px;
+    .hebergements-marseille{
+        background-color: white;
+        width: 100%;
+        margin: 0px;
+        padding: 0;
+        border-radius: 0; 
+    }
+    .group-annonce{
+        flex-direction: column;
+        flex-wrap: unset;
+        width: 98%;
+        height: 1200px;
+    }
+    .annonce-hm1{
+        width: 90%;
+        height: 15%;
+    }
+    /* Activités */
+    .activites{
+        justify-content: space-around;
+        height: 1300px;
+        margin: 0;
+        padding: 0;
+    }
+    .titre-activite{
+        height: 60px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .group-activite{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 88%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+    
+    }
+    .activites-module{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+    }
+    .group-act2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 60%;
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+    }
+    .annonce-act1{
+        height: 170px;
+        width: 95%;
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+    }
+    .annonce-act2{
+        height: 170px;
+        width: 95%;
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+    }
+    .image-act1, .image-act2{
+        height: 70%;
+    }
+    /* Footer */
+    .reservia-footer{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 560px;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .module-footer{
+        height: 140px;
+        width: 90%;
+        padding: 20px;
+    }
+    .footer-titre{
+        height: 40%;
+    }
 }
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive Tablette
 Tablette = 991px
