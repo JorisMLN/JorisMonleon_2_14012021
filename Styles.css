@@ -23,7 +23,7 @@ body{
     background-color: #ffffff;
     font-family: 'raleway', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-h1{
+h2{
     font-size: 1.2em;
 }
 p{
@@ -60,16 +60,16 @@ p{
 /* Le header */
 .reservia-header{
     display: flex;
-    justify-content: space-between;
     border: 1px solid black;
     flex-direction: row;
-    max-height: 80px;
-    padding-left: 15px;
 }
 .reservia-logo{
     display: flex;
     padding: 10px;
     margin: 5px;
+    padding-left: 20px;
+    border: 1px solid black;
+    width: 75%;
 }
 .reservia-menu{
     display: flex;
@@ -93,6 +93,14 @@ p{
     color: black;
     padding: 5px;
     margin: 5px;
+}
+.inscription-module{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 10%;
+    border: 2px solid rgb(43, 48, 119);
 }
 .menu-inscription{
     display: flex;
@@ -395,4 +403,41 @@ p{
 .footer-text{
     display: flex;
     flex-direction: column; 
+}
+
+/* Responsive Mobile 
+Mobile = 480px
+*/
+@media screen and (max-width: 480px){
+    .reservia-header{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .reservia-logo{
+        width: 40%;
+        padding-left: 10px;
+    }
+    .reservia-menu{
+        display: flex;
+        align-self: flex-end;
+        width: 95%;
+        order: 3;
+    }
+    .inscription-module{
+        display: flex;
+        align-self: initial;
+        height: 60px;
+        margin: 5px;
+        width: 40%;
+        order: 2;
+    }
+
+}
+
+/* Responsive Tablette
+Tablette = 991px
+*/
+@media screen (min-width: 481px) and (max-width: 991px){
+
 }
