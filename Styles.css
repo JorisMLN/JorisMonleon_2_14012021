@@ -32,6 +32,11 @@ h2{
     font-weight: bold;
     text-shadow: 0px 0px 2px black;
 }
+h3{
+    font-size: 1.1em;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px black;
+}
 p{
     font-size: 1em;
     padding-left: 5px;
@@ -39,7 +44,7 @@ p{
 }
 .fas, .far{
     color: #0065FC;
-    background-color: #DEEBFF;
+    background-color: #ffffff;
     
 }
 
@@ -69,6 +74,8 @@ p{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #0065FC;
     color: #0065FC;
     height: 100%;
     width: 50%;
@@ -79,6 +86,7 @@ p{
     justify-content: space-around;
     width: 50%;
     color: black;
+    font-weight: bold;
     padding: 5px;
     margin: 5px;
 }
@@ -96,6 +104,8 @@ p{
     display: flex;
     justify-content: space-around;
     color: #0065FC;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #0065FC;
     padding: 5px;
     margin: 5px;
 }
@@ -133,6 +143,7 @@ p{
 }
 #iconmap{
     color: #000000;
+    font-size: 20px;
 }
 .champ-recherche{
     height: 100%;
@@ -141,8 +152,8 @@ p{
 }
 .saisie{
     background-color: #ffffff;
-    border: #DEEBFF;
-    height: 100%;
+    border: 1px solid #DEEBFF;
+    height: 93%;
     width: 100%;
     font-weight: bold;
 }
@@ -191,7 +202,7 @@ p{
     margin: 5px;
 }
 .filtre-option:hover{
-    border: 2px solid #0065FC;
+    border: 3px solid #0065FC;
 }
 .module-icon{
     display: flex;
@@ -214,6 +225,10 @@ p{
     max-width: 500px;
     margin: 5px;
     padding-left: 20px;
+}
+#icon-option-eco, #icon-option-fam, #icon-option-rom, #icon-option-ani{
+    color: #0065FC;
+    background-color: #DEEBFF;
 }
 #iconinfo{
     border: 1px solid #DEEBFF;
@@ -257,6 +272,39 @@ p{
     height: 480px;
     width: 100%;
 }
+.icon-hm{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+#icon-hm-grey{
+    color: gray;
+    opacity: 0.4;
+    background-color: #ffffff;
+}
+.annonce-hm1{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 18px 18px 18px 18px;
+    border: 5px solid rgb(255, 255, 255);
+    width: 28%;
+    height: 40%;
+    box-shadow: 1px 1px 10px grey;
+    
+}
+.module-img1{
+    display: flex;
+    align-items: center;
+    height: 80%;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+}
+.image-hm1{
+    display: flex;
+    justify-self: flex-end;
+    max-width: 100%;
+}
 .les-plus-populaires{
     display: flex;
     flex-direction: column;
@@ -282,41 +330,11 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: #DEEBFF;
     color: #000000;
     height: 100%;
-}
-.icon-hm{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-}
-.annonce-hm1{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 18px 18px 18px 18px;
-    border: 5px solid rgb(255, 255, 255);
-    width: 25%;
-    height: 40%;
-    box-shadow: 1px 1px 10px grey;
-    
-}
-.module-img1{
-    height: 55%;
-    border-radius: 15px 15px 0px 0px;
-    border:2px solid black ;
-    overflow: hidden;
-}
-.testimg1{
-    display: flex;
-    justify-self: flex-end;
-    max-width: 100%;
-}
-.image-hm1{
-    width: 100%;
-    overflow: hidden;
-    border-radius: 15px 15px 0px 0px;
-
+    width: 40px;
+    font-size: 20px;
 }
 .annonce-hm2{
     display: flex;
@@ -328,14 +346,21 @@ p{
     height: 20%;
     box-shadow: 1px 1px 10px grey;  
 }
-.image-hm2{
+.module-img2{
+    display: flex;
+    align-items: center;
     max-width: 33%;
     border-radius: 18px 0px 0px 18px;
+    overflow: hidden;
+}
+.image-hm2{
+    display: flex;
+    justify-self: flex-end;
+    max-height: 100%;
 }
 .text-hm2{
     display: flex;
     flex-direction: column;
-
 }
 #icon-hm2{
     display: flex;
@@ -393,10 +418,22 @@ p{
     border: 5px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 10px rgb(209, 206, 206);
 }
-.image-act1{
+.module-img-act{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
     height: 90%;
-    width: 100%;
-    border-radius: 15px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
+}
+.image-act1{
+    display: flex;
+    justify-self: flex-end;
+    max-height: 100%;
+}
+.image-act2{
+    display: flex;
+    justify-self: flex-end;
+    max-width: 100%;
 }
 .group-act2{
     display: flex;
@@ -435,11 +472,6 @@ p{
     height: 45%;
     width: 98%;
     box-shadow: 0px 0px 10px rgb(209, 206, 206);
-}
-.image-act2{
-    height: 80%;
-    width: 100%;
-    border-radius: 15px 20px 0px 0px;
 }
 
 
@@ -552,6 +584,9 @@ Mobile = 480px
         background-color: #0065FC;
         color: white;
     }
+    .filtre-info{
+        padding-left: 2px;
+    }
     /* Hebergements */
     .hebergements{
         flex-direction: column-reverse;
@@ -568,14 +603,16 @@ Mobile = 480px
         width: 90%;
         height: 23%;
     }
+    .module-img2{
+        display: flex;
+    }
     .image-hm2{
-        width: 160px;
+        max-height: 100%;
     }
     .hebergements-marseille{
         background-color: white;
         width: 100%;
         margin: 0px;
-        padding: 0;
         border-radius: 0; 
     }
     .group-annonce{
@@ -633,8 +670,15 @@ Mobile = 480px
         margin: 0;
         padding: 0;   
     }
-    .image-act1, .image-act2{
-        height: 70%;
+    .module-img-act{
+        display: flex;
+        overflow: hidden;
+    }
+    .image-act1{
+        display: flex;
+        justify-self: flex-end;
+        max-width: 100%;
+        max-height: none;
     }
     /* Footer */
     .reservia-footer{
