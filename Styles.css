@@ -517,10 +517,14 @@ input{
 
 
 /* Responsive Mobile 
-Mobile = 480px
+Mobile = 600px
 
 */
 @media screen and (max-width: 480px){
+    /* body */
+    p{
+        padding-left: 7px;
+    }
     /* Header */
     .reservia-header{
         display: flex;
@@ -564,6 +568,9 @@ Mobile = 480px
         justify-content: space-between;
         flex-wrap: wrap;
         min-height: 160px;
+    }
+    .filtre-option{
+        max-height: 40px;
     }
     .icon-map{
         width: 20%;
@@ -708,14 +715,129 @@ Mobile = 480px
 
 
 
-
-
-
-
-
 /* Responsive Tablette
-Tablette = 991px
+Tablette = 1000px
 */
 @media screen and (min-width: 481px) and (max-width: 991px){
+
+    /* Body */
+    p{
+        font-size: 0.8em;
+        padding-left: 2px;
+    }
+    /* Header */
+    .reservia-header{
+        padding-left: 25px;
+    }
+    .reservia-logo{
+        width: 30%;
+    }
+    .reservia-menu{
+        width: 48%;
+    }
+
+    /* Navigation */
+    .navigation{
+        padding-left: 20px;
+    }
+    .filtres{
+        flex-direction: column;
+    }
+    .filtre-responsiv{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .filtre-option{
+        min-height: 40px;
+    }
+
+    /* Hebergements */
+    .hebergements{
+        flex-direction: column-reverse;
+    }
+    .les-plus-populaires{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 200px;
+        margin: 2px;
+        padding: 2px;
+    }
+    .titre-plus-populaires{
+        align-items: center;
+        width: 90%;
+        height: 15%;
+        margin: 2px;
+        padding: 2px;
+    }
+    #icon-populaire{
+        font-size: 25px;
+    }
+    .annonce-hm2{
+        flex-direction: column;
+        width: 30%;
+        height: 70%;
+    }
+    .module-img2{
+        border-radius: 18px 18px 0px 0px ;
+        max-width: 100%;
+        max-height: auto;
+        overflow: hidden;
+    }
+    .image-hm2{
+        max-height: none;
+    }
+    .icon-hm{
+        width: 80px;
+        margin-left: 20px
+    }
+    .hebergements-marseille{
+        justify-content: space-between;
+        width: 90%;
+        height: 550px;
+        margin: 5px;
+        padding: 2px;
+    }
+    .titre-hebergement{
+        align-items: center;
+        width: 90%;
+        height: 5%;
+        margin: 2px;
+        padding: 2px;
+    }
+    .afficher{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height: 5%;
+        padding-left: 0px;
+    }
+
+
+    /* Activités */
+    .activites{
+        height: 800px;
+        justify-content:initial;
+    }
+    .titre-activite{
+        align-items: center;
+        width: 90%;
+        height: 5%;
+        margin: 2px;
+        padding-left: 60px;
+    }
+    .group-activite{
+        flex-direction: column;
+        height: 95%;
+        width: 95%;
+        margin: 0px;
+    }
+    .activites-module{
+        height: 50%;
+        width: 100%;
+        margin: 0;
+    }
 
 }
