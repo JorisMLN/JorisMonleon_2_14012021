@@ -1,14 +1,11 @@
 
-
 /* Commentary
 
 Color 
 Blue -> #0065FC
 light blue -> #DEEBFF
 
-*/
-
-/* Font */
+Font */
 @font-face{
     font-family:'raleway';
     src: url('fonts/Raleway-Light.ttf');
@@ -42,12 +39,16 @@ p{
     padding-left: 5px;
     text-shadow: 0px 0px 2px black;
 }
-.fas, .far{
+.fas{
     color: #0065FC;
     background-color: #ffffff;
     
 }
-
+.FlexAroundCenter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /* Le header */
 .header{
@@ -63,17 +64,11 @@ p{
     width: 75%;
 }
 .reservia__menu{
-    display: flex;
-    justify-content: space-around;
     flex-direction: row;
-    align-items: center;
     width: 25%;
     max-width: 400px;
 }
 .menu__hebergement{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     font-weight: bold;
     text-shadow: 0px 0px 1px #0065FC;
     color: #0065FC;
@@ -82,8 +77,6 @@ p{
     border-top:2px solid #0065FC;
 }
 .menu__activites{
-    display: flex;
-    justify-content: space-around;
     width: 50%;
     color: black;
     font-weight: bold;
@@ -94,22 +87,17 @@ p{
     color: #0065FC;
 }
 .inscription-module{
-    display: flex;
-    justify-content: space-around;
     flex-direction: row;
     align-items: center;
     width: 10%;
 }
 .inscription{
-    display: flex;
-    justify-content: space-around;
     color: #0065FC;
     font-weight: bold;
     text-shadow: 0px 0px 1px #0065FC;
     padding: 5px;
     margin: 5px;
 }
-
 
 /* La navigation */
 .navigation{
@@ -124,17 +112,11 @@ p{
     margin: 5px;
 }
 .recherche-module{
-    display: flex;
-    flex-direction: row;    
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
     height: 50px;
     width: 400px;
 }
 .module-icon-map{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     height: 100%;
     width: 12%;
     border-radius: 15px 0px 0px 15px;
@@ -162,9 +144,6 @@ input{
     padding-left: 20px;
 }
 .recherche-button{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     height: 100%;
     width: 32%;
     border-radius: 0px 15px 15px 0px;
@@ -209,9 +188,6 @@ input{
     border: 3px solid #0065FC;
 }
 .module-icon{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 23px 23px 23px 23px;
@@ -230,32 +206,19 @@ input{
     margin: 5px;
     padding-left: 20px;
 }
-.icon-option-eco, .icon-option-fam, .icon-option-rom, .icon-option-ani{
-    color: #0065FC;
-    background-color: #DEEBFF;
-}
 .iconinfo{
     border: 1px solid #DEEBFF;
     border-radius: 40px;
     margin: 12px;
     padding: 5px;
-    border: 1px solid #DEEBFF;
-
 }
-
 
 /* Section hebergements */
 .hebergements{
-    display: flex;
-    justify-content: space-around;
     width: 100%;
-    align-items: center;
 }
 .hebergements__marseille{
-    display: flex;
-    flex-direction: column;    
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     background-color: #DEEBFF;
     border: 2px solid #DEEBFF;
     border-radius: 20px 20px 20px 20px;
@@ -269,10 +232,7 @@ input{
     width: 100%;
 }
 .group-annonce{
-    display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
     height: 480px;
     width: 100%;
 }
@@ -284,12 +244,9 @@ input{
     border: 5px solid rgb(255, 255, 255);
     width: 28%;
     height: 40%;
-    box-shadow: 1px 1px 10px grey;
-    
+    box-shadow: 1px 1px 10px grey;   
 }
 .module-img1{
-    display: flex;
-    align-items: center;
     height: 80%;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
@@ -310,10 +267,7 @@ input{
     background-color: #ffffff;
 }
 .hebergements__populaires{
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     background-color: #DEEBFF;
     border: 2px solid #DEEBFF;
     border-radius: 20px 20px 20px 20px;
@@ -331,9 +285,6 @@ input{
     width: 80%;
 }
 .icon-populaire{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     background-color: #DEEBFF;
     color: #000000;
     height: 100%;
@@ -351,8 +302,6 @@ input{
     box-shadow: 1px 1px 10px grey;  
 }
 .module-img2{
-    display: flex;
-    align-items: center;
     max-width: 33%;
     border-radius: 18px 0px 0px 18px;
     overflow: hidden;
@@ -378,13 +327,9 @@ input{
     font-size: 1.4em;
 }
 
-
 /* Section Activités */
 .activites{
-    display: flex;
-    flex-direction: column;    
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
     padding: 1px;
     height: 600px; 
 }
@@ -396,10 +341,7 @@ input{
     padding-left: 60px;
 }
 .group-activites{
-    display: flex;
-    flex-direction: row;    
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: row;
     width: 95%;
     height: 90%;
     min-height: 350px;
@@ -478,12 +420,9 @@ input{
     box-shadow: 0px 0px 10px rgb(209, 206, 206);
 }
 
-
 /* Le Footer */
 .footer{
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
     background-color: #DEEBFF;
     height: 200px;
     margin-top: 20px;
@@ -509,16 +448,8 @@ input{
 
 
 
-
-
-
-
-
-
-
 /* Responsive Mobile 
 Mobile = 500px
-
 */
 @media screen and (max-width: 499px){
     /* body */
@@ -538,7 +469,6 @@ Mobile = 500px
         padding-left: 10px;
     }
     .reservia__menu{
-        display: flex;
         align-self: flex-end;
         width: 100%;
         order: 3;
@@ -549,8 +479,6 @@ Mobile = 500px
         border-bottom: 2px solid #0065FC;
     }
     .inscription-module{
-        display: flex;
-        align-items: center;
         height: 65px;
         margin: 5px;
         width: 20%;
@@ -574,8 +502,6 @@ Mobile = 500px
     }
     .icon-rechercher{
         display: flex;
-        align-items: center;
-        justify-content: space-around;
         height: 100%;
         width: 20%;
         border-radius: 12px 12px 12px 12px;
@@ -712,9 +638,6 @@ Mobile = 500px
 
 
 
-
-
-
 /* Responsive Tablette
 Tablette = 900px
 */
@@ -735,7 +658,6 @@ Tablette = 900px
     .reservia__menu{
         width: 48%;
     }
-
     /* Navigation */
     .navigation{
         padding-left: 20px;
@@ -751,7 +673,6 @@ Tablette = 900px
     .filtre-option{
         min-height: 40px;
     }
-
     /* Hebergements */
     .hebergements{
         flex-direction: column-reverse;
@@ -814,8 +735,6 @@ Tablette = 900px
         height: 5%;
         padding-left: 0px;
     }
-
-
     /* Activités */
     .activites{
         height: 800px;
@@ -839,5 +758,4 @@ Tablette = 900px
         width: 100%;
         margin: 0;
     }
-
 }
