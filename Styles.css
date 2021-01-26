@@ -50,19 +50,19 @@ p{
 
 
 /* Le header */
-.reservia-header{
+.header{
     display: flex;
     flex-direction: row;
     padding-left: 45px;
 }
-.reservia-logo{
+.reservia__logo{
     display: flex;
     padding: 10px;
     margin: 5px;
     padding-left: 20px;
     width: 75%;
 }
-.reservia-menu{
+.reservia__menu{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -70,7 +70,7 @@ p{
     width: 25%;
     max-width: 400px;
 }
-.menu-hebergement{
+.menu__hebergement{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -81,7 +81,7 @@ p{
     width: 50%;
     border-top:2px solid #0065FC;
 }
-.menu-activites{
+.menu__activites{
     display: flex;
     justify-content: space-around;
     width: 50%;
@@ -100,7 +100,7 @@ p{
     align-items: center;
     width: 10%;
 }
-.menu-inscription{
+.inscription{
     display: flex;
     justify-content: space-around;
     color: #0065FC;
@@ -117,7 +117,7 @@ p{
     flex-direction: column;
     padding-left: 50px;;
 }
-.nav1{
+.nav__recherche{
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -131,7 +131,7 @@ p{
     height: 50px;
     width: 400px;
 }
-.icon-map{
+.module-icon-map{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -141,7 +141,7 @@ p{
     border: 1px solid #DEEBFF;
     background-color: #DEEBFF;
 }
-#iconmap{
+.iconmap{
     color: #000000;
     background-color: #DEEBFF;
     font-size: 20px;
@@ -175,11 +175,11 @@ input{
 .icon-rechercher{
     display: none;
 }
-#iconsearch{
+.iconsearch{
     color: #DEEBFF;
     background-color: #0065FC;
 }
-.nav2{
+.nav__filtres{
     display: flex;
     flex-direction: column;
     margin: 5px;
@@ -234,7 +234,7 @@ input{
     color: #0065FC;
     background-color: #DEEBFF;
 }
-#iconinfo{
+.iconinfo{
     border: 1px solid #DEEBFF;
     border-radius: 40px;
     margin: 12px;
@@ -251,7 +251,7 @@ input{
     width: 100%;
     align-items: center;
 }
-.hebergements-marseille{
+.hebergements__marseille{
     display: flex;
     flex-direction: column;    
     justify-content: space-around;
@@ -276,16 +276,6 @@ input{
     height: 480px;
     width: 100%;
 }
-.icon-hm{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-}
-.icon-hm-grey{
-    color: gray;
-    opacity: 0.4;
-    background-color: #ffffff;
-}
 .annonce-hm1{
     display: flex;
     flex-direction: column;
@@ -304,12 +294,22 @@ input{
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
 }
-.image-hm1{
+.img1{
     display: flex;
     justify-self: flex-end;
     max-width: 100%;
 }
-.les-plus-populaires{
+.icon__star{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.icon__star--grey{
+    color: gray;
+    opacity: 0.4;
+    background-color: #ffffff;
+}
+.hebergements__populaires{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -322,7 +322,7 @@ input{
     margin: 35px 35px 35px 0;
     height: 600px
 }
-.titre-plus-populaires{
+.titre-populaires{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -330,7 +330,7 @@ input{
     margin: 1px;
     width: 80%;
 }
-#icon-populaire{
+.icon-populaire{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -357,12 +357,12 @@ input{
     border-radius: 18px 0px 0px 18px;
     overflow: hidden;
 }
-.image-hm2{
+.img2{
     display: flex;
     justify-self: flex-end;
     max-height: 100%;
 }
-.text-hm2{
+.text-annonce2{
     display: flex;
     flex-direction: column;
 }
@@ -395,7 +395,7 @@ input{
     height: 10%;
     padding-left: 60px;
 }
-.group-activite{
+.group-activites{
     display: flex;
     flex-direction: row;    
     justify-content: space-around;
@@ -405,7 +405,7 @@ input{
     min-height: 350px;
     margin: 2px;
 }
-.activites-module{
+.module-activites{
     display: flex;
     justify-content: space-around;
     width: 50%;
@@ -447,7 +447,7 @@ input{
     width: 45%;
     margin: 10px;
 }
-.annonce-act2-top{
+.annonce-act2--top{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -457,7 +457,7 @@ input{
     width: 98%;
     box-shadow: 0px 0px 10px rgb(209, 206, 206);
 }
-.annonce-act2-bot{
+.annonce-act2--bot{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -480,7 +480,7 @@ input{
 
 
 /* Le Footer */
-.reservia-footer{
+.footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -489,19 +489,19 @@ input{
     margin-top: 20px;
     padding-top: 15px;
 }
-.module-footer{
+.footer__module{
     display: flex;
     flex-direction: column;
     width:28%;
     height: 80%;
 }
-.footer-titre{
+.footer__titre{
     display: flex;
     align-items: center;
     height: 20%;
     height: 80%;
 }
-.footer-text{
+.footer__text{
     display: flex;
     flex-direction: column;
     height: 80%;
@@ -517,33 +517,33 @@ input{
 
 
 /* Responsive Mobile 
-Mobile = 600px
+Mobile = 500px
 
 */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 499px){
     /* body */
     p{
         padding-left: 7px;
     }
     /* Header */
-    .reservia-header{
+    .header{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         padding-left: 0px;
     }
-    .reservia-logo{
+    .reservia__logo{
         width: 40%;
         padding-left: 10px;
     }
-    .reservia-menu{
+    .reservia__menu{
         display: flex;
         align-self: flex-end;
         width: 100%;
         order: 3;
     }
-    .menu-hebergement{
+    .menu__hebergement{
         border-top: none;
         height: 40px;
         border-bottom: 2px solid #0065FC;
@@ -560,19 +560,7 @@ Mobile = 600px
     .navigation{
         padding-left: 0px;
     }
-    .filtres{
-        flex-direction: column;
-    }
-    .filtre-responsiv{
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        min-height: 160px;
-    }
-    .filtre-option{
-        max-height: 40px;
-    }
-    .icon-map{
+    .module-icon-map{
         width: 20%;
     }
     .recherche-module{
@@ -595,6 +583,18 @@ Mobile = 600px
         background-color: #0065FC;
         color: white;
     }
+    .filtres{
+        flex-direction: column;
+    }
+    .filtre-responsiv{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-height: 160px;
+    }
+    .filtre-option{
+        max-height: 40px;
+    }
     .filtre-info{
         padding-left: 2px;
     }
@@ -602,12 +602,12 @@ Mobile = 600px
     .hebergements{
         flex-direction: column-reverse;
     }
-    .les-plus-populaires{
+    .hebergements__populaires{
         width: 100%;
         margin: 0px;
         border-radius: 0;
     }
-    .titre-plus-populaires{
+    .titre-populaires{
         width: 95%;
     }
     .annonce-hm2{
@@ -617,10 +617,10 @@ Mobile = 600px
     .module-img2{
         display: flex;
     }
-    .image-hm2{
+    .img2{
         max-height: 100%;
     }
-    .hebergements-marseille{
+    .hebergements__marseille{
         background-color: white;
         width: 100%;
         margin: 0px;
@@ -650,7 +650,7 @@ Mobile = 600px
         margin: 0;
         padding: 0;
     }
-    .group-activite{
+    .group-activites{
         flex-direction: column;
         justify-content: space-between;
         height: 94%;
@@ -658,7 +658,7 @@ Mobile = 600px
         margin: 0;
         padding: 0;
     }
-    .activites-module{
+    .module-activites{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -676,7 +676,7 @@ Mobile = 600px
         margin: 0;
         padding: 0;
     }
-    .annonce-act1, .annonce-act2-top, .annonce-act2-bot, .annonce-act3{
+    .annonce-act1, .annonce-act2--top, .annonce-act2--bot, .annonce-act3{
         height: 175px;
         width: 95%;
         margin: 0;
@@ -693,19 +693,19 @@ Mobile = 600px
         max-height: none;
     }
     /* Footer */
-    .reservia-footer{
+    .footer{
         flex-direction: column;
         justify-content: space-between;
         height: 560px;
         margin-top: 0px;
         padding-top: 0px;
     }
-    .module-footer{
+    .footer__module{
         height: 140px;
         width: 90%;
         padding: 20px;
     }
-    .footer-titre{
+    .footer__titre{
         height: 40%;
     }
 }
@@ -716,9 +716,9 @@ Mobile = 600px
 
 
 /* Responsive Tablette
-Tablette = 1000px
+Tablette = 900px
 */
-@media screen and (min-width: 481px) and (max-width: 991px){
+@media screen and (min-width: 500px) and (max-width: 1100px){
 
     /* Body */
     p{
@@ -726,13 +726,13 @@ Tablette = 1000px
         padding-left: 2px;
     }
     /* Header */
-    .reservia-header{
+    .header{
         padding-left: 25px;
     }
-    .reservia-logo{
+    .reservia__logo{
         width: 30%;
     }
-    .reservia-menu{
+    .reservia__menu{
         width: 48%;
     }
 
@@ -756,7 +756,7 @@ Tablette = 1000px
     .hebergements{
         flex-direction: column-reverse;
     }
-    .les-plus-populaires{
+    .hebergements__populaires{
         flex-direction: row;
         flex-wrap: wrap;
         width: 90%;
@@ -764,14 +764,14 @@ Tablette = 1000px
         margin: 2px;
         padding: 2px;
     }
-    .titre-plus-populaires{
+    .titre-populaires{
         align-items: center;
         width: 90%;
         height: 15%;
         margin: 2px;
         padding: 2px;
     }
-    #icon-populaire{
+    .icon-populaire{
         font-size: 25px;
     }
     .annonce-hm2{
@@ -785,14 +785,14 @@ Tablette = 1000px
         max-height: auto;
         overflow: hidden;
     }
-    .image-hm2{
+    .img2{
         max-height: none;
     }
-    .icon-hm{
+    .icon__star{
         width: 80px;
         margin-left: 20px
     }
-    .hebergements-marseille{
+    .hebergements__marseille{
         justify-content: space-between;
         width: 90%;
         height: 550px;
@@ -828,13 +828,13 @@ Tablette = 1000px
         margin: 2px;
         padding-left: 60px;
     }
-    .group-activite{
+    .group-activites{
         flex-direction: column;
         height: 95%;
         width: 95%;
         margin: 0px;
     }
-    .activites-module{
+    .module-activites{
         height: 50%;
         width: 100%;
         margin: 0;
