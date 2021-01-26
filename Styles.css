@@ -253,7 +253,6 @@ input{
 }
 .img1{
     display: flex;
-    justify-self: flex-end;
     max-width: 100%;
 }
 .icon__star{
