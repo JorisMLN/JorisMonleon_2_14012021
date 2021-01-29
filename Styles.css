@@ -86,7 +86,7 @@ p{
 .ancres-menu{
     color: #0065FC;
 }
-.inscription-module{
+.inscription__module{
     flex-direction: row;
     align-items: center;
     width: 10%;
@@ -111,7 +111,7 @@ p{
     padding: 15px;
     margin: 5px;
 }
-.recherche-module{
+.recherche__module{
     flex-direction: row;
     height: 50px;
     width: 400px;
@@ -128,7 +128,7 @@ p{
     background-color: #DEEBFF;
     font-size: 20px;
 }
-.champ-recherche{
+.champ__recherche{
     height: 100%;
     width: 55%;
     border: 1px solid #DEEBFF;
@@ -143,7 +143,7 @@ input{
     width: 100%;
     padding-left: 20px;
 }
-.recherche-button{
+.recherche__button{
     height: 100%;
     width: 32%;
     border-radius: 0px 15px 15px 0px;
@@ -154,7 +154,7 @@ input{
 .icon-rechercher{
     display: none;
 }
-.iconsearch{
+.icon-search{
     color: #DEEBFF;
     background-color: #0065FC;
 }
@@ -194,11 +194,15 @@ input{
     width: 44px;
     height: 100%;
 }
-.filtre-text{
+.filtre-icon{
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+.filtre__text{
     margin: 0 8px 0 8px;
     text-shadow: 0px 0px 1px black;
 }
-.filtre-info{
+.filtre__info{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -226,17 +230,17 @@ input{
     padding: 2px;
     margin: 35px;
 }
-.titre-hebergement{
+.titre__hebergement{
     display: flex;
     padding-left: 5%;
     width: 100%;
 }
-.group-annonce{
+.group__annonce{
     flex-flow: row wrap;
     height: 480px;
     width: 100%;
 }
-.annonce-hm1{
+.annonce__hm1{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -246,7 +250,7 @@ input{
     height: 40%;
     box-shadow: 1px 1px 10px grey;   
 }
-.module-img1{
+.module__img1{
     height: 80%;
     border-radius: 15px 15px 0px 0px;
     overflow: hidden;
@@ -275,7 +279,7 @@ input{
     margin: 35px 35px 35px 0;
     height: 600px
 }
-.titre-populaires{
+.titre__populaires{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -290,7 +294,7 @@ input{
     width: 40px;
     font-size: 30px;
 }
-.annonce-hm2{
+.annonce__hm2{
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -300,7 +304,7 @@ input{
     height: 20%;
     box-shadow: 1px 1px 10px grey;  
 }
-.module-img2{
+.module__img2{
     max-width: 33%;
     border-radius: 18px 0px 0px 18px;
     overflow: hidden;
@@ -310,7 +314,7 @@ input{
     justify-self: flex-end;
     max-height: 100%;
 }
-.text-annonce2{
+.text__annonce2{
     display: flex;
     flex-direction: column;
 }
@@ -332,28 +336,28 @@ input{
     padding: 1px;
     height: 600px; 
 }
-.titre-activite{
+.titre__activite{
     display: flex;
     margin: 1px;
     width: 95%;
     height: 10%;
     padding-left: 60px;
 }
-.group-activites{
+.group__activites{
     flex-direction: row;
     width: 95%;
     height: 90%;
     min-height: 350px;
     margin: 2px;
 }
-.module-activites{
+.module__activites{
     display: flex;
     justify-content: space-around;
     width: 50%;
     height: 98%;
     margin: 2px;
 }
-.annonce-act1{
+.annonce__act1{
     display: flex;
     flex-direction: column;
     width: 45%;
@@ -363,24 +367,24 @@ input{
     border: 5px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 10px rgb(209, 206, 206);
 }
-.module-img-act{
+.module__img-act{
     display: flex;
     align-items: center;
     overflow: hidden;
     height: 90%;
     border-radius: 15px 15px 0px 0px;
 }
-.image-act1{
+.image__act1{
     display: flex;
     justify-self: flex-end;
     max-height: 100%;
 }
-.image-act2{
+.image__act2{
     display: flex;
     justify-self: flex-end;
     max-width: 100%;
 }
-.group-act2{
+.group__act2{
     display: flex;
     flex-direction: column;    
     justify-content: space-between;
@@ -388,7 +392,7 @@ input{
     width: 45%;
     margin: 10px;
 }
-.annonce-act2--top{
+.annonce__act2--top{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -398,7 +402,7 @@ input{
     width: 98%;
     box-shadow: 0px 0px 10px rgb(209, 206, 206);
 }
-.annonce-act2--bot{
+.annonce__act2--bot{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -408,7 +412,7 @@ input{
     width: 98%;
     box-shadow: 0px 0px 10px rgb(209, 206, 206);
 }
-.annonce-act3{
+.annonce__act3{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -477,7 +481,7 @@ Mobile = 500px
         height: 40px;
         border-bottom: 2px solid #0065FC;
     }
-    .inscription-module{
+    .inscription__module{
         height: 65px;
         margin: 5px;
         width: 20%;
@@ -490,13 +494,13 @@ Mobile = 500px
     .module-icon-map{
         width: 20%;
     }
-    .recherche-module{
+    .recherche__module{
         width: 100%;
     }
-    .champ-recherche{
+    .champ__recherche{
         width: 88%;
     }
-    .recherche-button{
+    .recherche__button{
         display: none;
     }
     .icon-rechercher{
@@ -520,7 +524,7 @@ Mobile = 500px
     .filtre-option{
         max-height: 40px;
     }
-    .filtre-info{
+    .filtre__info{
         padding-left: 2px;
     }
     /* Hebergements */
@@ -532,14 +536,14 @@ Mobile = 500px
         margin: 0px;
         border-radius: 0;
     }
-    .titre-populaires{
+    .titre__populaires{
         width: 95%;
     }
-    .annonce-hm2{
+    .annonce__hm2{
         width: 90%;
         height: 23%;
     }
-    .module-img2{
+    .module__img2{
         display: flex;
     }
     .img2{
@@ -552,13 +556,13 @@ Mobile = 500px
         border: #ffffff;
         border-radius: 0; 
     }
-    .group-annonce{
+    .group__annonce{
         flex-direction: column;
         flex-wrap: unset;
         width: 98%;
         height: 1200px;
     }
-    .annonce-hm1{
+    .annonce__hm1{
         width: 90%;
         height: 15%;
     }
@@ -569,13 +573,13 @@ Mobile = 500px
         margin: 0;
         padding: 0;
     }
-    .titre-activite{
+    .titre__activite{
         height: 60px;
         width: 100%;
         margin: 0;
         padding: 0;
     }
-    .group-activites{
+    .group__activites{
         flex-direction: column;
         justify-content: space-between;
         height: 94%;
@@ -583,7 +587,7 @@ Mobile = 500px
         margin: 0;
         padding: 0;
     }
-    .module-activites{
+    .module__activites{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -591,7 +595,7 @@ Mobile = 500px
         margin: 0;
         padding: 0;
     }
-    .group-act2{
+    .group__act2{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -601,17 +605,17 @@ Mobile = 500px
         margin: 0;
         padding: 0;
     }
-    .annonce-act1, .annonce-act2--top, .annonce-act2--bot, .annonce-act3{
+    .annonce__act1, .annonce__act2--top, .annonce__act2--bot, .annonce__act3{
         height: 175px;
         width: 95%;
         margin: 0;
         padding: 0;   
     }
-    .module-img-act{
+    .module__img-act{
         display: flex;
         overflow: hidden;
     }
-    .image-act1{
+    .image__act1{
         display: flex;
         justify-self: flex-end;
         max-width: 100%;
@@ -684,7 +688,7 @@ Tablette = 900px
         margin: 2px;
         padding: 2px;
     }
-    .titre-populaires{
+    .titre__populaires{
         align-items: center;
         width: 90%;
         height: 15%;
@@ -694,12 +698,12 @@ Tablette = 900px
     .icon-populaire{
         font-size: 25px;
     }
-    .annonce-hm2{
+    .annonce__hm2{
         flex-direction: column;
         width: 30%;
         height: 70%;
     }
-    .module-img2{
+    .module__img2{
         border-radius: 18px 18px 0px 0px ;
         max-width: 100%;
         max-height: auto;
@@ -719,7 +723,7 @@ Tablette = 900px
         margin: 5px;
         padding: 2px;
     }
-    .titre-hebergement{
+    .titre__hebergement{
         align-items: center;
         width: 90%;
         height: 5%;
@@ -739,20 +743,20 @@ Tablette = 900px
         height: 800px;
         justify-content:initial;
     }
-    .titre-activite{
+    .titre__activite{
         align-items: center;
         width: 90%;
         height: 5%;
         margin: 2px;
         padding-left: 60px;
     }
-    .group-activites{
+    .group__activites{
         flex-direction: column;
         height: 95%;
         width: 95%;
         margin: 0px;
     }
-    .module-activites{
+    .module__activites{
         height: 50%;
         width: 100%;
         margin: 0;
