@@ -705,8 +705,7 @@ Tablette = 900px
     }
     .module__img2{
         border-radius: 18px 18px 0px 0px ;
-        max-width: 100%;
-        max-height: auto;
+        max-width: 100%; 
         overflow: hidden;
     }
     .img2{
